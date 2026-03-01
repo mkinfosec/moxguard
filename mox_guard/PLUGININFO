@@ -1,0 +1,4 @@
+Name = "MoxGuard"
+Version = "1.0"
+Authors = ["Mox"]
+Description = "Troll and hate speech filter — auto-ignores racists, spammers, and chat-ruiners."
