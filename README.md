@@ -1,6 +1,45 @@
 
 
- IP Stats — every violation now includes IP + country in the log. When the resolution comes back
+
+ 
+ What it does:
+
+ ┌────────────────────┬──────────────────────────────────────────────────────────────┐
+ │ Layer              │ What it catches                                              │
+ ├────────────────────┼──────────────────────────────────────────────────────────────┤
+ │ 🔤 Phrase match    │ Racial slurs, hate speech, shock content — configurable list │
+ ├────────────────────┼──────────────────────────────────────────────────────────────┤
+ │ 💥 Flood detection │ >8 messages in 20 seconds (adjustable)                       │
+ ├────────────────────┼──────────────────────────────────────────────────────────────┤
+ │ 🔡 Char spam       │ AAAAAAAAAAA type garbage                                     │
+ ├────────────────────┼──────────────────────────────────────────────────────────────┤
+ │ 📢 ALL CAPS        │ Long messages that are 80%+ uppercase                        │
+ ├────────────────────┼──────────────────────────────────────────────────────────────┤
+ │ ✅ Already ignored │ Zaps their messages even if Nicotine+ would let them through │
+ └────────────────────┴──────────────────────────────────────────────────────────────┘
+
+ All detection layers apply to both rooms and PMs.
+
+ ────────────────────────────────────────────────────────────────────────────────
+
+ Commands (type in any chat window):
+
+ ```
+   /mg status                — who's been flagged, counts, settings
+   /mg ignore <user>         — manual instant ignore
+   /mg unignore <user>       — undo
+   /mg whitelist <user>      — never filter this person
+   /mg unwhitelist <user>
+   /mg clear <user>          — reset their violation count
+   /mg reload                — recompile phrase list after you edit it in settings
+ ```
+
+ ────────────────────────────────────────────────────────────────────────────────
+
+ Tweaking the word list: Go to Preferences → Plugins → MoxGuard settings. Add/remove phrases there
+ — no restart needed, just /mg reload after saving.
+
+ Violation log lands at: ~/.local/share/nicotine/moxguard.logIP Stats — every violation now includes IP + country in the log. When the resolution comes back
  from the server (async), it updates the log entry. If a user has violations when their IP
  resolves, it logs the full picture.
 
