@@ -2,6 +2,9 @@
 # MoxGuard — Nicotine+ moderation plugin
 # Handles trolls, racists, spammers, and general chat-ruiners.
 # Instructions written on Arch, please check your Nicotine install directory yourself. Find the plugins folder and chuck it in there.
+# In nicotine, go to preferences, plugins, add plugins. Assuming you've placed the files in the correct directory, you should see Moxguard.
+
+
 # Never assume README is gospel truth.
 
 
