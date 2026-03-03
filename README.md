@@ -1,5 +1,5 @@
 
-#!MoxGuard — Nicotine+ Chat moderation plugin 
+##MoxGuard — Nicotine+ Chat moderation plugin 
 ### Handles trolls, racists, spammers, redditors and general chat-ruinerunenjoyerers.
 ### Instructions written on Arch, please check your Nicotine install directory yourself. Find the plugins folder and chuck it in there.
 ### In nicotine, go to preferences, plugins, add plugins. Assuming you've placed the files in the correct directory, you should see Moxguard.
@@ -12,7 +12,7 @@
 ###   3. ASCII / character spam (same char repeated -ever wonder who messes up public bathrooms? These guys)
 ###   4. ALL CAPS shouting - stfu already
 ###   5. Multi-nick detection (same IP, different username - nored)
-#
+
 ## Actions:
 ###   - Zap (silently drop) offending messages. They wont even know you are noring them. They just shout into /dev/null.
 ###   - Log every violation with IP + country - not that it means anything. But you know, MAGA
@@ -21,7 +21,7 @@
 ###   - Whitelist trusted users to never filter
 
  
- #!What it does:
+ ## What it does:
 
  ┌────────────────────┬──────────────────────────────────────────────────────────────┐
  │ Layer              │ What it catches                                              │
@@ -37,11 +37,11 @@
  │ ✅ Already ignored │ Nores their messages even if Nicotine+ would let them through │
  └────────────────────┴──────────────────────────────────────────────────────────────┘
 
- ###All detection layers apply to both rooms and PMs.
+ ## All detection layers apply to both rooms and PMs.
 
  ────────────────────────────────────────────────────────────────────────────────
 
- ##Commands (type in any chat window):
+ ## Commands (type in any chat window):
 
  ```
    /mg status                — who's been flagged, counts, settings
@@ -58,7 +58,8 @@
 
  ────────────────────────────────────────────────────────────────────────────────
 
- ### Tweaking the word list: Go to Preferences → Plugins → MoxGuard settings. Add/remove phrases there
+ ## Configuring the word list:
+ Go to Preferences → Plugins → MoxGuard settings. Add/remove phrases there
  ###— no restart needed, just /mg reload after saving.
 
  ### Violation log lands at: ~/.local/share/nicotine/moxguard  (configurable in Moxguard settings)
