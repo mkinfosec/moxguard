@@ -14,7 +14,7 @@
 ###   5. Multi-nick detection (same IP, different username - nored)
 
 ## Actions:
-###   - Zap (silently drop) offending messages. They wont even know you are noring them. They just shout into /dev/null.
+###   - nore (silently drop) offending messages. They wont even know you are noring them. They just shout into /dev/null.
 ###   - Log every violation with IP + country - not that it means anything. But you know, MAGA
 ###   - Auto-ignore users after reaching the warn threshold
 ###   - Taint IPs of ignored users → auto-ignore any new nick from that IP
