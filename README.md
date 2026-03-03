@@ -62,12 +62,12 @@
  Go to Preferences → Plugins → MoxGuard settings. Add/remove phrases there
  ###— no restart needed, just /mg reload after saving.
 
- ### Violation log lands at: ~/.local/share/nicotine/moxguard  (configurable in Moxguard settings)
- ### logIP Stats — every violation now includes IP + country in the log. When the resolution comes back
+ ### Violation log lands at: ~/.local/share/nicotine/moxguard.log  (configurable in Moxguard settings)
+ ### IP Stats — every violation now includes IP + country in the log. When the resolution comes back
  from the server (async), it updates the log entry. If a user has violations when their IP
  resolves, it logs the full picture.
 
- ###Multi-nick detection — as soon as someone is ignored, their IP gets tainted. When any new username
+ ### Multi-nick detection — as soon as someone is ignored, their IP gets tainted. When any new username
  resolves to a tainted IP:
  ### - MoxGuard logs a [MULTI-NICK] alert with the known bad nicks linked to that IP
  ### - Auto-ignores the new nick immediately
